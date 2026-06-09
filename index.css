@@ -1,0 +1,279 @@
+* {
+    /* 消除边距 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./image/img4.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html,
+body {
+    height: auto;
+    overflow: visible;
+}
+
+.site-search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    z-index: 9999;/
+}
+
+.site-search-input {
+    height: 28px;
+    width: 200px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 13px;
+    outline: none;
+}
+
+.site-search-btn {
+    height: 28px;
+    padding: 0 12px;
+    border: none;
+    background: #0066cc;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.site-search-btn:hover {
+    background: #0052a3;
+}
+
+.bigbox {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.dingbu {
+    width: 30%;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.school-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.school-size {
+    margin-top: 15px;
+
+}
+
+.school-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 60% 55% 55% 60%;
+}
+
+.text-wrap {
+    float: left;
+    overflow: hidden;
+}
+
+.school-pinyin {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.school-name {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/* -------以上是校徽布局-------- */
+.navigationbar {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 15px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.navigationbar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nb-size {
+    width: 11%;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.nb-size a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* --------以上为导航栏--------------- */
+
+div>.lunbo {
+    width: 65%;
+    height: 400px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.lunbo-img {
+    width: 900%;
+    height: 100%;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.lunbo-img img {
+    width: calc(100% / 9);
+    height: 100%;
+    object-fit: cover;
+}
+
+.dot-box {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot-box span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.dot-box span.active {
+    background: #004099;
+}
+
+/* --------以上是轮播图------------ */
+.two-col-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 0;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.col-box {
+    width: 40%;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    overflow: hidden;
+    /* 防止内容超出盒子 */
+}
+
+.box-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+    /* 你的网站主色调，可修改 */
+}
+
+.notice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.notice-list li:last-child {
+    border-bottom: none;
+}
+
+.notice-list a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.notice-list a:hover {
+    color: #0066cc;
+}
+
+.notice-list span {
+    color: #999;
+    font-size: 12px;
+}
+
+.campus-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.campus-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* --------公告栏---------- */
+.page-footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    background-color: #92979c;
+    color: #fff;
+    text-align: center; /* 整体居中 */
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center; /* 文字强制居中 */
+}
